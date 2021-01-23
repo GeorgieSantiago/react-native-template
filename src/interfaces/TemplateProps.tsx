@@ -1,3 +1,3 @@
 export interface ViewProps {
-    children?: React.ReactElement;
+  children?: React.ReactElement;
 }

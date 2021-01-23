@@ -1,17 +1,11 @@
-import { AxiosPromise, AxiosRequestConfig, AxiosResponse } from "axios";
+export interface RequestHeaders {}
 
-export interface RequestHeaders {
-
-}
-
-export interface ResponseHeaders {
-
-}
+export interface ResponseHeaders {}
 
 export interface IResponse<T> {
-    data: T
+  data: T;
 }
 
 export interface BaseContext {
-    [key: string]: (prop?: any) => any;
+  [key: string]: (prop?: any) => any;
 }

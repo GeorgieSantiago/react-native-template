@@ -8,7 +8,8 @@
     "run:start": "react-native start",
     "storybook:run": "start-storybook -p 4000 -c .storybook",
     "test:run": "jest",
-    "lint:run": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint:run": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@types/react-native-i18n": "^2.0.0",
