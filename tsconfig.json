@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "target": "esnext",                       /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
-    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "target": "esnext",                       /* Specify ECMAScript target version: 'ES3' (default), 'ES5"], 'ES2015"], 'ES2016"], 'ES2017"],'ES2018' or 'ESNEXT'. */
+    "module": "commonjs",                     /* Specify module code generation: 'none"], 'commonjs"], 'amd"], 'system"], 'umd"], 'es2015"], or 'ESNext'. */
     "lib": ["es6"],                           /* Specify library files to be included in the compilation. */
     "allowJs": true,                          /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
-    "jsx": "react-native",                    /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-    // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
-    // "sourceMap": true,                     /* Generates corresponding '.map' file. */
+    "jsx": "react-native",                    /* Specify JSX code generation: 'preserve"], 'react-native"], or 'react'. */
+    // "declaration": true,                   /* Generates corresponding [".d.ts' file. */
+    // "sourceMap": true,                     /* Generates corresponding [".map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
     // "outDir": "./",                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
@@ -16,7 +16,7 @@
     "noEmit": true,                           /* Do not emit outputs. */
     // "incremental": true,                   /* Enable incremental compilation */
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
-    // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+    // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of"], spread, and destructuring when targeting 'ES5' or 'ES3'. */
     "isolatedModules": true,                  /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
     /* Strict Type-Checking Options */
@@ -38,19 +38,16 @@
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./src",                       /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "@components": ["./components"],
-      "@interfaces": ["./interfaces"],
-      "@store": ["./src/store"],
-      "@styles": ["./src/styles"],
-      "@template": ["./src/template"],
-      "@screens": ["./src/screens"],
-      "@router": ["./src/router"],
-      "@network": ["./src/network"],
-      "@config": ["./src/config"],
-      "@reducers": ["./src/reducers"],
-      "@actions": ["./src/actions"],
-      "@request": ["./src/request"],
-      "@useAction": ["./src/providers/useAction"],
+      "components": ["./src/components"],
+      "interfaces": ["./src/interfaces"],
+      "store": ["./src/store"],
+      "styles": ["./src/styles"],
+      "template": ["./src/template"],
+      "screens": ["./src/screens"],
+      "router": ["./src/router"],
+      "network": ["./src/network"],
+      "locales": ["./src/locales"],
+      "useAction": ["./src/hooks/useAction.tsx"],
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */

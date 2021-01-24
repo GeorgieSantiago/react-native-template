@@ -20,8 +20,8 @@ module.exports = {
         alias: {
           components: './src/components',
           interfaces: './src/interfaces',
-          store: './src/components',
-          styles: './src/state',
+          store: './src/store',
+          styles: './src/styles',
           template: './src/template',
           screens: './src/screens',
           router: './src/router',

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "run:android": "react-native run-android",
+    "run:android": "react-native run-android --no-jetifier",
     "run:ios": "react-native run-ios",
     "run:start": "react-native start",
     "storybook:run": "start-storybook -p 4000 -c .storybook",
@@ -19,7 +19,6 @@
     "axios": "^0.21.1",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-i18n": "^2.0.15",
     "react-redux": "^7.2.2",
     "react-router-native": "^5.2.0",
     "redux": "^4.0.5"
