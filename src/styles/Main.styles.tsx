@@ -54,6 +54,6 @@ export const componentStyle = StyleSheet.create({
     flex: 1,
     display: 'flex',
     backgroundColor: '#000',
-    alignContent: 'center'
-  }
-})
+    alignContent: 'center',
+  },
+});

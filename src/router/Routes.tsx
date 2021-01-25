@@ -6,16 +6,16 @@ import {RouterProps} from 'interfaces/RouterProps';
 
 const Routes = (props: RouterProps) => (
   <NativeRouter>
-    {!props.bottomNavigation && (props.children)}
+    {!props.bottomNavigation && props.children}
     <Switch>
       <Route exact path="/">
         <Example />
       </Route>
-      <Route >
+      <Route>
         <Text>Page Not Found</Text>
       </Route>
     </Switch>
-    {props.bottomNavigation && (props.children)}
+    {props.bottomNavigation && props.children}
   </NativeRouter>
 );
 

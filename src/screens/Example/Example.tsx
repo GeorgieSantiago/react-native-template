@@ -8,7 +8,7 @@
  * @format
  */
 import React from 'react';
-import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
+import {SafeAreaView, ScrollView, Text, StatusBar} from 'react-native';
 import {exampleStyle as styles} from 'styles/Main.styles';
 declare const global: {HermesInternal: null | {}};
 
@@ -19,7 +19,7 @@ const Example = () => (
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
-          <Text>SN10</Text>
+        <Text>SN10</Text>
       </ScrollView>
     </SafeAreaView>
   </>
