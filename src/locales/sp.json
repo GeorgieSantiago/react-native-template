@@ -1,4 +1,6 @@
 {
+    "SelectLanguage": "SP",
+    "Styleguide": "Guía de estilo",
     "login": {
       "welcome": "Welcome {{name}} to our localized app!",
       "login_button": "Login",

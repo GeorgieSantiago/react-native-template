@@ -10,9 +10,10 @@
 import React from 'react';
 import {SafeAreaView, ScrollView, Text, StatusBar} from 'react-native';
 import {exampleStyle as styles} from 'styles/Main.styles';
+
 declare const global: {HermesInternal: null | {}};
 
-const Example = () => (
+const Styleguide = () => (
   <>
     <StatusBar barStyle="dark-content" />
     <SafeAreaView>
@@ -25,4 +26,4 @@ const Example = () => (
   </>
 );
 
-export default Example;
+export default Styleguide;

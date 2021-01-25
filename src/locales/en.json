@@ -1,4 +1,6 @@
 {
+    "SelectLanguage": "En-US",
+    "Styleguide": "Styleguide",
     "login": {
       "welcome": "Welcome {{name}} to our localized app!",
       "login_button": "Login",

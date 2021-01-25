@@ -1,3 +1,3 @@
-import Example from './Example/Example';
+import Styleguide from './Styleguide/Styleguide';
 
-export {Example};
+export {Styleguide};
