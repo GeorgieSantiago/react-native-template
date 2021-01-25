@@ -48,3 +48,12 @@ export const viewStyle = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export const componentStyle = StyleSheet.create({
+  button: {
+    flex: 1,
+    display: 'flex',
+    backgroundColor: '#000',
+    alignContent: 'center'
+  }
+})
