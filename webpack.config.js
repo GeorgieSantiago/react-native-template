@@ -1,5 +1,5 @@
-const path = require('path')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   template: path.resolve(__dirname, './public/index.html'),
@@ -11,10 +11,11 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
-      propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+      propFilter: (prop) =>
+        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
     },
   },
-})
+});
 
 module.exports = {
   entry: path.join(__dirname, 'index.js'),
@@ -49,4 +50,4 @@ module.exports = {
     contentBase: './storybook',
     hot: true,
   },
-}
+};
