@@ -1,10 +1,11 @@
 import React from 'react';
 import { version } from '../../../../package.json';
-import { ListItem, Icon } from 'react-native-elements';
+import { ListItem } from 'react-native-elements';
 import { Text, Animated, View } from 'react-native';
 import SideMenu from 'react-native-side-menu-updated';
 import { t } from 'i18n';
 import { useHistory } from 'react-router-native'
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export const NavDrawer = (props: any) => {
   const history = useHistory()
