@@ -1,6 +1,6 @@
 export const theme = {
-    //Override Colors
-    /*colors: {
+  //Override Colors
+  /*colors: {
         primary: ,
         secondary: ,
         white: ,
@@ -35,4 +35,4 @@ export const theme = {
           }
         }
       }*/
-    }  
+};

@@ -1,6 +1,8 @@
 {
     "SelectLanguage": "SP",
     "Styleguide": "Guía de estilo",
+    "About": "Información",
+    "Version": "Versión {{version}}",
     "login": {
       "welcome": "Welcome {{name}} to our localized app!",
       "login_button": "Login",

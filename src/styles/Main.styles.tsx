@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
+import { theme } from './Theme.styles';
 export const exampleStyle = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
@@ -57,3 +57,31 @@ export const componentStyle = StyleSheet.create({
     alignContent: 'center',
   },
 });
+
+export const topNavigationStyle = StyleSheet.create({
+  header: {
+    color: '#fff',
+    fontSize: 18,
+    justifyContent: 'center'
+  }
+})
+
+export const bottomNavigationStyle = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'center'
+  },
+  card: {
+    padding: 0,
+    margin: 0
+  },
+  title: {
+
+  },
+  button: {
+    backgroundColor: 'blue'
+  },
+  homeButton: {
+    backgroundColor: 'blue'
+  }
+})
