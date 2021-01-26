@@ -17,7 +17,7 @@ export const LanguageSelect = () => {
     if (languages) {
       getLanguages().then((languageList) => setLanguages(languageList));
     }
-  }, [languages]);
+  });
 
   return (
     <>

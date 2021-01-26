@@ -20,5 +20,9 @@
       "button3": "Button",
       "button4": "Button",
       "button5": "Button"
+    },
+    "common": {
+      "LearnMore": "Learn More",
+      "Return": "Return"
     }
 }

@@ -16,21 +16,21 @@ export const NavDrawer = (props: any) => {
       overlayColor={'#002e63'}
       menu={props.isOpen && (
         <View style={{ backgroundColor: '#2089dc' }}>
-          <ListItem onPress={() => history.push('/')} key={0} bottomDivider>
+          <ListItem key={0} onPress={() => history.push('/')} bottomDivider>
             <Icon name="home" />
             <ListItem.Content>
               <ListItem.Title>{t('Styleguide')}</ListItem.Title>
             </ListItem.Content>
           </ListItem>
-          <ListItem key={0} bottomDivider>
+          <ListItem key={1} bottomDivider>
             <Icon name="info" />
             <ListItem.Content>
               <ListItem.Title>{t('About')}</ListItem.Title>
             </ListItem.Content>
             <ListItem.Chevron />
           </ListItem>
-          <ListItem key={0} bottomDivider>
-            <Icon name="rowing" />
+          <ListItem key={2} bottomDivider>
+            <Icon name="heartbeat" />
             <ListItem.Content>
               <ListItem.Title>{t('Version', { version })}</ListItem.Title>
             </ListItem.Content>
