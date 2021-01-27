@@ -8,11 +8,14 @@ export const NavHeader = (props: any) => {
     <Header
       leftComponent={{
         onPress: () => props.onPressLeftComponent(),
-        style: { fontSize: 18 },
+        style: {fontSize: 18},
         icon: 'menu',
         color: '#fff',
       }}
-      centerComponent={{text: t('Styleguide'), style: {color: '#fff', fontSize: 18}}}
+      centerComponent={{
+        text: t('Styleguide'),
+        style: {color: '#fff', fontSize: 18},
+      }}
       rightComponent={<LanguageSelect />}
     />
   );

@@ -1,36 +1,32 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Animated, View } from 'react-native';
+import React, {useEffect, useRef, useState, useCallback} from 'react';
+import {Animated} from 'react-native';
 
 interface SelectedTransitionProp {
-    running: boolean;
-    children: React.ReactChild;
-    startHidden?: boolean;
+  running: boolean;
+  children: React.ReactChild;
+  startHidden?: boolean;
 }
 
 export const SelectedTransition = ({
-    running,
-    children,
-    startHidden = false,
+  running,
+  children,
+  startHidden = false,
 }: SelectedTransitionProp) => {
-    const fadeAnim = useRef(new Animated.Value(startHidden ? 0 : 1)).current  // Initial value for opacity: 0
-    const [isHidden, setIsHidden] = useState(!startHidden)
-    const animate = () => {
-        //Initial Animation
-        Animated.timing(fadeAnim, {
-            toValue: isHidden ? 1 : 0,
-            duration: 1500,
-            useNativeDriver: false
-        })
-        setIsHidden(!isHidden);
-    }
+  const fadeAnim = useRef(new Animated.Value(startHidden ? 0 : 1)).current; // Initial value for opacity: 0
+  const [isHidden, setIsHidden] = useState(!startHidden);
+  const animate = useCallback(() => {
+    //Initial Animation
+    Animated.timing(fadeAnim, {
+      toValue: isHidden ? 1 : 0,
+      duration: 1500,
+      useNativeDriver: false,
+    });
+    setIsHidden(!isHidden);
+  }, [isHidden, fadeAnim]);
 
-    useEffect(() => {
-        animate()
-    }, [running])
+  useEffect(() => {
+    animate();
+  }, [running, animate]);
 
-    return (
-        <Animated.View style={{ opacity: fadeAnim }}>
-            {children}
-        </Animated.View>
-    )
-}
+  return <Animated.View style={{opacity: fadeAnim}}>{children}</Animated.View>;
+};

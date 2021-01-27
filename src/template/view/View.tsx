@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { ViewProps } from 'interfaces/TemplateProps';
-import { NavDrawer } from 'components/shared/NavigationDrawer/NavDrawer';
-import { NavHeader } from 'components/shared/NavigationHeader/NavHeader';
-import { NavFooter } from 'components/shared/NavigationFooter/NavFooter';
-import { View, SafeAreaView, ScrollView, StatusBar } from 'react-native';
-import { exampleStyle as styles } from 'styles/Main.styles';
+import React, {useState} from 'react';
+import {ViewProps} from 'interfaces/TemplateProps';
+import {NavDrawer} from 'components/shared/NavigationDrawer/NavDrawer';
+import {NavHeader} from 'components/shared/NavigationHeader/NavHeader';
+import {NavFooter} from 'components/shared/NavigationFooter/NavFooter';
+import {View, SafeAreaView, ScrollView, StatusBar} from 'react-native';
+import {exampleStyle as styles, viewStyle} from 'styles/Main.styles';
 
 const AppView = (props: ViewProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={viewStyle.flexone}>
       <NavHeader onPressLeftComponent={() => setIsOpen(!isOpen)} />
       <NavDrawer isOpen={isOpen}>
         <ScrollView>

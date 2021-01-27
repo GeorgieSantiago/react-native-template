@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import { theme } from './Theme.styles';
 export const exampleStyle = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
@@ -47,6 +46,14 @@ export const viewStyle = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  flexone: {flex: 1},
+  mb10: {marginBottom: 10},
+  flatButton: {
+    borderRadius: 0,
+    marginLeft: 0,
+    marginRight: 0,
+    marginBottom: 0,
+  },
 });
 
 export const componentStyle = StyleSheet.create({
@@ -62,26 +69,24 @@ export const topNavigationStyle = StyleSheet.create({
   header: {
     color: '#fff',
     fontSize: 18,
-    justifyContent: 'center'
-  }
-})
+    justifyContent: 'center',
+  },
+});
 
 export const bottomNavigationStyle = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   card: {
     padding: 0,
-    margin: 0
+    margin: 0,
   },
-  title: {
-
-  },
+  title: {},
   button: {
-    backgroundColor: 'blue'
+    backgroundColor: 'blue',
   },
   homeButton: {
-    backgroundColor: 'blue'
-  }
-})
+    backgroundColor: 'blue',
+  },
+});

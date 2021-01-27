@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import {Animated} from 'react-native';
 import LottieView from 'lottie-react-native';
 
@@ -9,16 +9,18 @@ const Animation = (props: {
   easingStatic: number;
   useNativeDriver: boolean;
 }) => {
-  const [progress, setProgress] = useState<Animated.Value>(
-    new Animated.Value(0),
-  );
+  const progress = useRef(new Animated.Value(0)).current; // Initial value for opacity: 0
   const [running, setRunning] = useState<boolean>(false);
   useEffect(() => {
     if (!running) {
       setRunning(true);
-      Animated.timing(progress, props).start();
+      Animated.timing(progress, {
+        toValue: 1,
+        duration: props.duration,
+        useNativeDriver: props.useNativeDriver,
+      }).start();
     }
-  }, []);
+  }, [running, progress, props.duration, props.useNativeDriver]);
 
   return (
     <LottieView

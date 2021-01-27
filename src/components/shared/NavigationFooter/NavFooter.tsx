@@ -1,7 +1,7 @@
 import React from 'react';
-import { View } from 'react-native';
+import {View} from 'react-native';
 import {Icon} from 'react-native-elements';
-import { bottomNavigationStyle } from 'styles/Main.styles';
+import {bottomNavigationStyle} from 'styles/Main.styles';
 
 export const NavFooter = () => {
   return (
