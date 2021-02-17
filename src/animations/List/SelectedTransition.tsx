@@ -22,7 +22,7 @@ export const SelectedTransition = ({
       useNativeDriver: false,
     });
     setIsHidden(!isHidden);
-  }, [isHidden, fadeAnim]);
+  }, []);
 
   useEffect(() => {
     animate();
