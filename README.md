@@ -1,5 +1,17 @@
 ### React Native Template
 
+#### Quickstart
+If you already have your platform of choice
+setup simply run the setup.sh to build
+the android and IOS folders then in two windows run
+
+> yarn run:start
+
+and
+
+> yarn run:<android|ios>
+
+
 #### Features
 - Typescript
 - Eslint
